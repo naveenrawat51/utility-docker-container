@@ -1,7 +1,7 @@
 {
   "name": "demo",
   "version": "1.0.0",
-  "description": "",
+  "description": "```\r docker build -t node-util .\r docker run -it -v C:\\Users\\narawat\\Desktop\\Naveen\\utility-docker-container\\:/app node-util npm init (we are using bind mouting so whatever we are creating into container will be available on host)\r ```",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
