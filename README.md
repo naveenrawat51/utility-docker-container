@@ -8,6 +8,7 @@ docker run -it -v C:\Users\narawat\Desktop\Naveen\utility-docker-container\:/app
 ```
 
 after adding 'ENTRYPOINT [ "npm" ]' just run
+
 ```
 docker build -t node-util .
 docker run -it -v C:\Users\narawat\Desktop\Naveen\utility-docker-container\:/app node-util init (we can use init/install direct without npm - npm will be considerd as we are using ENTRYPOINT)
@@ -15,4 +16,10 @@ docker run -it -v C:\Users\narawat\Desktop\Naveen\utility-docker-container\:/app
 OR
 
 docker run -it -v C:\Users\narawat\Desktop\Naveen\utility-docker-container\:/app node-util install express --save
+```
+
+after adding docker-compose.yaml file we can run following cmd
+
+```
+docker-compose run –rm npm init (by using run we point a single service and --rm removes container after stopped)
 ```
